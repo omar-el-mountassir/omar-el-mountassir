@@ -6,25 +6,28 @@
 
 ## 🚀 About Me
 
-See the [AUTHORS.md](AUTHORS.md) file for details.
+See the [AUTHORS.md](AUTHORS.md) file for detailed information about my background, experience, and professional journey.
 
 ## 🛠️ Technologies & Tools
 
-See the [TECHNOLOGIES.md](TECHNOLOGIES.md) file for details.
+See the [TECHNOLOGIES.md](TECHNOLOGIES.md) file for a comprehensive overview of my technology stack and expertise.
 
-## 🚀 Projects
+## � Repository Setup
 
-### Project 1
+**🔑 Important:** This repository uses GitHub Actions for automated stats generation. If you're forking this repository, you'll need to set up a GitHub Personal Access Token. See the [GITHUB_TOKEN_SETUP.md](GITHUB_TOKEN_SETUP.md) guide for detailed instructions.
 
-- **Description:** A brief description of your project.
-- **Technologies:** List the technologies used.
-- **Link:** [Repository](https://github.com/omar-el-mountassir/your-repo)
+## 🚀 Featured Projects
 
-### Project 2
+### 🌟 Project Showcase
 
-- **Description:** A brief description of your project.
-- **Technologies:** List the technologies used.
-- **Link:** [Repository](https://github.com/your-username/your-repo)
+*Coming soon - exciting projects in development!*
+
+- **Full-Stack Web Applications** - Modern, scalable solutions using React/Vue.js and Node.js
+- **AI/ML Solutions** - Innovative applications leveraging machine learning and artificial intelligence
+- **Mobile Applications** - Cross-platform mobile experiences with cutting-edge technologies
+- **Open Source Contributions** - Active contributions to the global developer community
+
+*Watch this space for updates on my latest work and innovations!*
 
 ## 📊 Stats
 

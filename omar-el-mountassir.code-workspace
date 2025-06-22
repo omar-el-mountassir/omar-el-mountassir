@@ -1,8 +1,161 @@
 {
 	"folders": [
 		{
+			"name": "omar-el-mountassir",
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.defaultCloneDirectory": "./",
+		"git.enableSmartCommit": true,
+		"git.confirmSync": false,
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"editor.formatOnSave": true,
+		"editor.wordWrap": "on",
+		"markdown.preview.fontSize": 14,
+		"markdown.preview.lineHeight": 1.6,
+		"terminal.integrated.defaultProfile.windows": "Git Bash",
+		"workbench.colorTheme": "GitHub Dark",
+		"workbench.iconTheme": "material-icon-theme",
+		"files.associations": {
+			"*.md": "markdown",
+			"*.yml": "yaml",
+			"*.yaml": "yaml"
+		},
+		"files.exclude": {
+			"**/.git": false,
+			"**/node_modules": true,
+			"**/.DS_Store": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/bower_components": true,
+			"**/*.code-search": true
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "🚀 Quick Commit & Push",
+				"type": "shell",
+				"command": "bash",
+				"args": [
+					"-c",
+					"git add . && git commit -m \"Update profile - $(date +'%Y-%m-%d %H:%M')\" && git push origin main"
+				],
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": true,
+					"clear": false
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "📊 Trigger GitHub Stats Update",
+				"type": "shell",
+				"command": "curl",
+				"args": [
+					"-X",
+					"POST",
+					"-H",
+					"Accept: application/vnd.github.v3+json",
+					"-H",
+					"Authorization: token ${input:githubToken}",
+					"https://api.github.com/repos/omar-el-mountassir/omar-el-mountassir/actions/workflows/metrics.yml/dispatches",
+					"-d",
+					"{\"ref\":\"main\"}"
+				],
+				"group": "test",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "🌐 Open GitHub Repository",
+				"type": "shell",
+				"command": "cmd",
+				"args": [
+					"/c",
+					"start",
+					"https://github.com/omar-el-mountassir/omar-el-mountassir"
+				],
+				"group": "build",
+				"presentation": {
+					"echo": false,
+					"reveal": "never",
+					"focus": false,
+					"panel": "shared"
+				}
+			},
+			{
+				"label": "📝 Preview README",
+				"type": "shell",
+				"command": "code",
+				"args": [
+					"README.md"
+				],
+				"group": "build",
+				"presentation": {
+					"echo": false,
+					"reveal": "never",
+					"focus": false,
+					"panel": "shared"
+				}
+			},
+			{
+				"label": "🔧 Setup Git Configuration",
+				"type": "shell",
+				"command": "bash",
+				"args": [
+					"-c",
+					"git config user.name \"Omar El Mountassir\" && git config user.email \"omar.mountassir@gmail.com\" && echo \"Git configured successfully!\""
+				],
+				"group": "build",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				}
+			}
+		]
+	},
+	"inputs": [
+		{
+			"id": "githubToken",
+			"description": "GitHub Personal Access Token",
+			"type": "promptString",
+			"password": true
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.vscode-github-actions",
+			"yzhang.markdown-all-in-one",
+			"davidanson.vscode-markdownlint",
+			"PKief.material-icon-theme",
+			"github.github-vscode-theme",
+			"ms-vscode.vscode-json",
+			"redhat.vscode-yaml",
+			"eamodio.gitlens",
+			"ms-vscode.vscode-github-actions"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
 }
