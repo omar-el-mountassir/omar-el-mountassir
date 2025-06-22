@@ -32,8 +32,6 @@ See the [TECHNOLOGIES.md](TECHNOLOGIES.md) file for details.
 
 ![Omar's GitHub Stats](https://github-readme-stats.vercel.app/api?username=omar-el-mountassir&show_icons=true&theme=radical&hide_border=true)
 
-![Omar's GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=omar-el-mountassir&theme=radical&hide_border=true)
-
 ![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=omar-el-mountassir&layout=compact&theme=radical&hide_border=true)
 
 ## 🏆 Trophies
