@@ -1,0 +1,28 @@
+name: Update README with latest blog posts
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Runs every Sunday at midnight
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-blog-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update README with latest blog posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          max_post_count: 5
+          readme_path: ./README.md
+          comment_tag_name: "BLOG-POST-LIST"
+          feed_list: "https://dev.to/feed/yourusername,https://medium.com/feed/@omar.mountassir"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "omar.mountassir@gmail.com"
+          git config --local user.name "Omar El Mountassir"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Updated README with latest blog posts"
+          git push
