@@ -4,26 +4,29 @@ This repository contains the README.md that displays on my GitHub profile page.
 
 ## 🛠️ Setup Instructions
 
-1. **Clone this repository** (if you haven't already):
+### 1. **Clone this repository** (if you haven't already)
+
    ```bash
    git clone https://github.com/omar-el-mountassir/omar-el-mountassir.git
    cd omar-el-mountassir
    ```
 
-2. **Customize the README.md**:
-   - Update personal information and contact details
-   - Add your actual skills and technologies
-   - Include links to your projects and social media
-   - Replace placeholder content with your information
+### 2. **Customize the README.md**
 
-3. **Configure GitHub Actions** (optional):
-   - Set up blog feeds in `.github/workflows/blog-post-workflow.yml`
-   - Add a `METRICS_TOKEN` secret for GitHub stats automation
+- Update personal information and contact details
+- Add your actual skills and technologies
+- Include links to your projects and social media
+- Replace placeholder content with your information
+
+### 3. **Configure GitHub Actions** (optional)
+
+- Set up blog feeds in `.github/workflows/blog-post-workflow.yml`
+- Add a `METRICS_TOKEN` secret for GitHub stats automation
 
 ## 📁 Repository Structure
 
-```
-.
+```bash
+omar-el-mountassir/
 ├── README.md                           # Main profile README
 ├── .github/
 │   ├── copilot-instructions.md         # Copilot customization
@@ -46,6 +49,7 @@ This repository contains the README.md that displays on my GitHub profile page.
 ## 🚀 Quick Commands
 
 Use the VS Code Command Palette (Ctrl+Shift+P) and search for:
+
 - `Tasks: Run Task` → `Push Changes to GitHub`
 - `Tasks: Run Task` → `Initialize Git Repository`
 
