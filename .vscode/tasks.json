@@ -11,6 +11,59 @@
 			"group": "build",
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Push Changes to GitHub",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push",
+				"origin",
+				"main"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Add and Commit Changes"
+			]
+		},
+		{
+			"label": "Add and Commit Changes",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-c",
+				"git add . && git commit -m \"Update profile - $(date +%Y-%m-%d)\""
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Preview README.md",
+			"type": "shell",
+			"command": "code",
+			"args": [
+				"README.md"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Open GitHub Repository",
+			"type": "shell",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"start",
+				"https://github.com/omar-el-mountassir/omar-el-mountassir"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
