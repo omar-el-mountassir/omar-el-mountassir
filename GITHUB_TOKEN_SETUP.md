@@ -46,7 +46,8 @@ The GitHub Actions workflow `metrics.yml` uses the `lowlighter/metrics` action t
 
 1. **Navigate to Repository Settings:**
 
-   - Go to your profile repository: `https://github.com/omar-el-mountassir/omar-el-mountassir`
+   - Go to your profile repository: `https://github.com/<github-user-or-org-name>/<github-user-or-org-name>`
+      - **Example:** `https://github.com/omar-el-mountassir/omar-el-mountassir`
    - Click the **"Settings"** tab
 
 2. **Access Secrets:**
