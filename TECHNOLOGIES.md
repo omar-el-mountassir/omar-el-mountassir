@@ -55,20 +55,20 @@ Databases and tools for data storage, retrieval, and knowledge management.
 
 Frameworks and platforms for orchestrating agents and automating workflows.
 
-[![ADK](https://img.shields.io/badge/-ADK-FF6F00?style=flat-square&logo=python&logoColor=white "ADK")](https://github.com/google/ADK)  
-[![LangChain](https://img.shields.io/badge/-LangChain-2D3748?style=flat-square&logo=langchain&logoColor=white "LangChain")](https://www.langchain.com/) ⭐ **Key Tool**  
+[![ADK](https://img.shields.io/badge/-ADK-FF6F00?style=flat-square&logo=python&logoColor=white "ADK")](https://github.com/google/ADK) ⭐ **Key Framework**
+[![LangChain](https://img.shields.io/badge/-LangChain-2D3748?style=flat-square&logo=langchain&logoColor=white "LangChain")](https://www.langchain.com/)
 [![OpenAI Swarm](https://img.shields.io/badge/-OpenAI%20Swarm-10A37F?style=flat-square&logo=openai&logoColor=white "OpenAI Swarm")](https://platform.openai.com/)  
-[![Pydantic AI](https://img.shields.io/badge/-Pydantic%20AI-0A9396?style=flat-square&logo=pydantic&logoColor=white "Pydantic AI")](https://docs.pydantic.dev/)
+[![Pydantic AI](https://img.shields.io/badge/-Pydantic%20AI-0A9396?style=flat-square&logo=pydantic&logoColor=white "Pydantic AI")](https://docs.pydantic.dev/) ⭐ **Key Framework**
 
 ## AI & Assistants
 
 AI models, coding assistants, and productivity tools.
 
 [![ChatGPT Plus](https://img.shields.io/badge/-ChatGPT%20Plus-10A37F?style=flat-square&logo=openai&logoColor=white "ChatGPT Plus")](https://chat.openai.com/)  
-[![Claude Code CLI](https://img.shields.io/badge/-Claude%20Code%20CLI-4A4E69?style=flat-square&logo=anthropic&logoColor=white "Claude Code CLI")](https://www.anthropic.com/)  
+[![Claude Code CLI](https://img.shields.io/badge/-Claude%20Code%20CLI-4A4E69?style=flat-square&logo=anthropic&logoColor=white "Claude Code CLI")](https://www.anthropic.com/)  ⭐ **Preferred**  
 [![Claude Desktop](https://img.shields.io/badge/-Claude%20Desktop-22223B?style=flat-square&logo=anthropic&logoColor=white "Claude Desktop")](https://www.anthropic.com/)  
 [![Gemini](https://img.shields.io/badge/-Gemini-4285F4?style=flat-square&logo=google&logoColor=white "Gemini")](https://gemini.google.com/)  
-[![GitHub Copilot](https://img.shields.io/badge/-GitHub%20Copilot-181717?style=flat-square&logo=githubcopilot&logoColor=white "GitHub Copilot")](https://github.com/features/copilot) ⭐ **Preferred**  
+[![GitHub Copilot](https://img.shields.io/badge/-GitHub%20Copilot-181717?style=flat-square&logo=githubcopilot&logoColor=white "GitHub Copilot")](https://github.com/features/copilot)
 [![NotebookLM Pro](https://img.shields.io/badge/-NotebookLM%20Pro-34A853?style=flat-square&logo=google&logoColor=white "NotebookLM Pro")](https://notebooklm.google.com/)
 
 ## DevOps & Automation Tools
